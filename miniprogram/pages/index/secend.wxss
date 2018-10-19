@@ -1,0 +1,42 @@
+/* miniprogram/pages/index/secend.wxss */
+/*
+ 这个是注释吧
+*/
+
+page {
+  background-color: #F6F6F6;
+  font-size: 32rpx;
+}
+
+.page-body{
+
+  padding: 0px 0px;
+  background-color: #F6F6F6
+}
+
+.page-title{
+   background-color: #31A9FB;
+   height: 44px;
+   text-align: center;
+   font-size: 34rpx;
+}
+
+.page-section {
+  margin-bottom: 4px;
+  background-color: white;
+}
+/*
+  padding: 0px 15px;  上 左
+*/
+.page-section-title {
+  padding: 0px 15px;
+  height: 25px;
+  font-size: 30rpx;
+  background-color: #ffffff;
+}
+
+.page-section-content {
+  background-color: white;
+  padding: 0 15px;
+  font-size: 30rpx;
+}

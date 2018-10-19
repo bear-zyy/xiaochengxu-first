@@ -1,0 +1,39 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/index/first",
+    "pages/index/secend",
+    "pages/secend/test",
+    "pages/index/2/test",
+    "pages/index/scrollView/scrollView",
+    "pages/index/network/networkV",
+    "pages/index/camera/camera",
+    "pages/index/scanCode/scanCode"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "张源远的第一个小程序",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "list": [
+     {
+      "selectedIconPath": "images/tab_home.png",
+      "iconPath": "images/home.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+     },
+     {
+      "selectedIconPath": "images/tab_live.png",
+      "iconPath": "images/live.png",
+      "pagePath": "pages/secend/test",
+      "text": "其他"
+     }
+   ]
+}
+
+}

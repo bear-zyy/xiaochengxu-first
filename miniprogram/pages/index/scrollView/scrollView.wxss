@@ -1,0 +1,82 @@
+/* miniprogram/pages/index/scrollView/scrollView.wxss */
+
+page {
+
+  background-color: #ffffff;
+  font-size:  30px;
+}
+
+.page-title{
+
+  text-align:  center;
+  font-size: 30px;
+
+}
+
+.page-scroll-y {
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.page-scroll-x {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-scroll-sub-red {
+
+  height:  50px;
+  width: 100%;
+  background-color: red;
+
+}
+
+
+
+.page-scroll-sub-yellow {
+
+  height:  50px;
+  width: 100%;
+  background-color: yellow;
+
+}
+
+.page-scroll-sub-blue {
+
+  height:  50px;
+  width: 100%;
+  background-color: blue;
+
+}
+
+.page-scroll-x-red {
+
+  height:  50px;
+  width: 100px;
+  background-color: red;
+
+}
+
+.page-scroll-x-yellow {
+
+  height:  50px;
+  width: 100px;
+  background-color: yellow;
+
+}
+
+.page-scroll-x-blue {
+
+  height:  50px;
+  width: 100px;
+  background-color: blue;
+
+}
+
+.page-srcoll-hor {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+}

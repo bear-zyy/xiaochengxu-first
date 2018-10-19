@@ -1,0 +1,21 @@
+/* miniprogram/pages/index/2/test.wxss */
+
+
+page {
+  background-color: #ffffff;
+  font-size: 30rpx;
+}
+
+.page-title {
+  padding: 15px 0;
+ font-size: 30rpx;
+ text-align: center;
+ height: 28px;
+ background-color: #31A9FB;
+}
+
+.page-button {
+
+ 
+
+}

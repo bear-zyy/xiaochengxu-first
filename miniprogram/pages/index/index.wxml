@@ -1,0 +1,26 @@
+<view class="container">
+    <view class='usermotto'>
+       <text class='usermotto'>{{name}}</text>
+    </view>
+    <view class='usermotto'>
+        <text class='user-motto'>{{testName}}</text>
+    </view>
+
+    <button bindtap="tapName"> Click me! </button>
+    <button bindtap='testClick'> testDataChange! </button>
+
+    <text class='usermotto'>{{threeName}}</text>
+    
+    <button bindtap='secendClick'>secendClick!</button>
+
+    <button bindtap='testPage'>testPageClick</button>
+
+    <button bindtap='scrollViewClick'>jumpToSrcollView</button>
+
+    <button bindtap='networkClick'> networkRequest</button>
+
+    <button bindtap='camera'>cameraClick</button>
+
+    <button bindtap='scanCode'>scanCodeClick</button>
+
+</view>

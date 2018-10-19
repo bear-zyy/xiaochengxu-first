@@ -1,0 +1,19 @@
+<view class='page-body'>
+  <view class='page-title'>
+    <rich-text nodes='<div class="div_class" style="line-height: 44px; color: white; font-size: 15rpx ">审核记录</div>'></rich-text>
+  </view>
+
+  <view class='page-section'>
+    <view class='page-section-title'> 已同意 </view>
+    <view class='page-section-content'>
+      <rich-text nodes="{{richData}}"></rich-text>
+    </view>
+  </view>
+
+  <view class='page-section'>
+    <view class='page-section-title'>
+      <rich-text nodes="{{secendData}}"></rich-text>
+    </view>
+  </view>
+
+</view>

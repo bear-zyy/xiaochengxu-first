@@ -1,0 +1,4 @@
+
+<view>
+  <button bindtap='networkRequest'> request </button>
+</view>

@@ -1,0 +1,4 @@
+<!--miniprogram/pages/index/2/test.wxml-->
+<view class='page-title'> button测试 </view>
+
+<button type='default' size= '50px' loading= false plain= false  disabled = false  bindtap='defaultClick' hover-class='other-button-hover'>  default </button>

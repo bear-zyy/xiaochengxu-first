@@ -1,0 +1,32 @@
+
+<view class='page-title'> scrollView </view>
+<view >
+  <scroll-view class="page-scroll-y" scroll-y='true' style="width:100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" >
+  <view id='red' class="page-scroll-sub-red"></view>
+  <view id='yellow' class='page-scroll-sub-yellow'></view>
+  <view id='blue' class='page-scroll-sub-blue'></view>
+  <view id='red2' class="page-scroll-sub-red"></view>
+  <view id='yellow2' class='page-scroll-sub-yellow'></view>
+  <view id='blue2' class='page-scroll-sub-blue'></view>
+</scroll-view>
+</view>
+
+
+<scroll-view class="page-scroll-x" scroll-x style='hight:100px' bindscrolltoupper="upper">
+   <view class="page-srcoll-hor">
+     <view id='red' class='page-scroll-x-red'></view>
+     <view id='yellow' class='page-scroll-x-yellow'></view>
+     <view id='blue' class='page-scroll-x-blue'></view>
+     <view id='red2' class='page-scroll-x-red'></view>
+     <view id='yellow2' class='page-scroll-x-yellow'></view>
+     <view id='blue2' class='page-scroll-x-blue'></view>
+   </view>
+</scroll-view>
+
+<scroll-view class="page-scroll-x" scroll-x style='hight:100px' bindscrolltoupper="upper">
+   <view class="page-srcoll-hor">
+     <block wx:for="{{items}}">
+       <view class='page-scroll-x-{{item}}'></view>
+     </block>
+   </view>
+</scroll-view>
