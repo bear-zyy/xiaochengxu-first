@@ -1,0 +1,29 @@
+
+<view class='page-secetion'>
+   <image style='width:50px; height:50px; background-color: #ffffff;' model="scaleToFill" src="{{scr}}"></image>
+
+</view>
+
+<view class='page-secetion-direction'>
+
+<text>哈哈</text>
+<text>呵呵</text>
+<text>嘻嘻</text>
+</view>
+
+
+<view class="box">
+  <text class='text-center'> 坑啊</text>
+  <text class='text-center'> 不知道</text>
+</view>
+
+
+<view class='page-center'>
+  <text>再试一次</text>
+</view>
+
+<view class='InputAddOn'>
+  <text> hahha</text>
+  <input class='InputAddOn-field'></input>
+  <text>dddd</text>
+</view>

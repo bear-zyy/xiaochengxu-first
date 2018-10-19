@@ -1,24 +1,14 @@
-// miniprogram/pages/secend/test.js
+// miniprogram/pages/secend/image/imageV.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+   scr : '../../../images/tab_home.png'
+  },
 
-  },
-  
-  jumpToImageVC: function () {
-
-   wx.navigateTo({
-     url: 'image/imageV',
-   })
-  },
-  cellClick: function () {
-    wx.navigateTo({
-      url: 'cell/cell',
-    })
-  },
+  // /pages/secend/image
 
   /**
    * 生命周期函数--监听页面加载

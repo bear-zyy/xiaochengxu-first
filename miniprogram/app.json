@@ -9,7 +9,9 @@
     "pages/index/scrollView/scrollView",
     "pages/index/network/networkV",
     "pages/index/camera/camera",
-    "pages/index/scanCode/scanCode"
+    "pages/index/scanCode/scanCode",
+    "pages/secend/image/imageV",
+    "pages/secend/cell/cell"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -18,22 +20,20 @@
     "navigationBarTitleText": "张源远的第一个小程序",
     "navigationBarTextStyle": "black"
   },
-
   "tabBar": {
     "list": [
-     {
-      "selectedIconPath": "images/tab_home.png",
-      "iconPath": "images/home.png",
-      "pagePath": "pages/index/index",
-      "text": "首页"
-     },
-     {
-      "selectedIconPath": "images/tab_live.png",
-      "iconPath": "images/live.png",
-      "pagePath": "pages/secend/test",
-      "text": "其他"
-     }
-   ]
-}
-
+      {
+        "selectedIconPath": "images/tab_home.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/tab_live.png",
+        "iconPath": "images/live.png",
+        "pagePath": "pages/secend/test",
+        "text": "其他"
+      }
+    ]
+  }
 }

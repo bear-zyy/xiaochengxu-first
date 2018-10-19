@@ -1,1 +1,6 @@
 
+<view>
+  <button bindtap='jumpToImageVC'>imageVC</button>
+<button bindtap='cellClick'>cell</button>
+
+</view>

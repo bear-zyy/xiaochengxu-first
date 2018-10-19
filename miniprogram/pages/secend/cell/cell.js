@@ -1,4 +1,4 @@
-// miniprogram/pages/secend/test.js
+// miniprogram/pages/secend/cell/cell.js
 Page({
 
   /**
@@ -6,18 +6,6 @@ Page({
    */
   data: {
 
-  },
-  
-  jumpToImageVC: function () {
-
-   wx.navigateTo({
-     url: 'image/imageV',
-   })
-  },
-  cellClick: function () {
-    wx.navigateTo({
-      url: 'cell/cell',
-    })
   },
 
   /**
