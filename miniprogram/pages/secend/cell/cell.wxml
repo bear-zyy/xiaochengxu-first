@@ -1,2 +1,32 @@
-<!--miniprogram/pages/secend/cell/cell.wxml-->
-<text>miniprogram/pages/secend/cell/cell.wxml</text>
+
+<view class="page">
+  <scroll-view class='page-scrollV' style='width:100%;' scroll-y='true' >
+    <view class='page-scrollV-Cell'>
+      <text class='scrollV-Item-first'>第一个cell</text>
+
+      <image class='scrollV-Item-secend' style='height:30px; width:30px;' src='{{scr}}'></image>
+
+      <text class='scrollV-Item-three'>看看效果</text>
+
+    </view>
+
+    <view class='page-scrollV-Cell' >
+      <text>第二个cell</text>
+      <image style='height:30px; width:30px;' model="scaleToFill" src='{{scr}}'></image>
+      <text>看看效果</text>
+    </view>
+
+    <view class='page-scrollV-Cell' >
+      <text>第三个cell</text>
+      <image style='height:30px; width:30px;' model="scaleToFill" src='{{scr}}'></image>
+      <text>看看效果</text>
+    </view>
+
+    <view class='page-scrollV-Cell' >
+      <text>第四个cell</text>
+      <image style='height:30px; width:30px;' model="scaleToFill" src='{{scr}}'></image>
+      <text>看看效果</text>
+    </view>
+
+  </scroll-view>
+</view>

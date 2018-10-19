@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    scr: '../../../images/live.png'
   },
 
   /**
