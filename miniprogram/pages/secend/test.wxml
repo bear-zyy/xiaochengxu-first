@@ -3,5 +3,5 @@
   <button bindtap='jumpToImageVC'>imageVC</button>
   <button bindtap='cellClick'>cell</button>
   <button bindtap='customCell'>customCell</button>
-
+  <button bindtap='zhixing'>智行火车票</button>
 </view>

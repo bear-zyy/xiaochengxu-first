@@ -1,36 +1,24 @@
-// miniprogram/pages/secend/test.js
+// miniprogram/pages/secend/zhixing/zhixing.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-  
-  jumpToImageVC: function () {
-
-   wx.navigateTo({
-     url: 'image/imageV',
-   })
-  },
-  cellClick: function () {
-    wx.navigateTo({
-      url: 'cell/cell',
-    })
+    perc : '25',
+    scrollVHeight : '100px',
+    items: [{ name: '张源远', headUrl: 'red', num: '5', best: true },
+     { name: '马伟', headUrl: 'blue', num: '5', best: true },
+      { name: '王淼森', headUrl: 'black', num: '2', best: false },
+       { name: '王旭', headUrl: 'yellow', num: '2', best: false },
+        { name: '李谦', headUrl: 'green', num: '2', best: false}]
   },
 
-  customCell: function () {
+  scrollViewHeightChange: function () {
    
-   wx.navigateTo({
-     url: 'cell/customCell',
+   this.setData({
+     scrollVHeight : '150px'
    })
-  },
-  
-  zhixing: function () {
-    wx.navigateTo({
-      url: 'zhixing/zhixing',
-    })
   
   },
 
@@ -38,7 +26,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+     
   },
 
   /**
@@ -52,7 +40,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.setNavigationBarTitle({
+      title: '智行火车票',
+    })
   },
 
   /**

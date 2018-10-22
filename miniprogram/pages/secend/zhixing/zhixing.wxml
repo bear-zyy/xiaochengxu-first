@@ -1,0 +1,34 @@
+
+<view class="page">
+  <image class='page-image'></image>
+
+  <view class='page-speed'>
+    <view class='page-speed-title'>
+      <text>低速</text>
+      <text>中速</text>
+      <text>快速</text>
+      <text>高速</text>
+      <text>VIP</text>
+    </view>
+    <progress class='page-speed-progress' percent='{{perc}}' activeColor='yellow' backgroundColor='#999999'></progress>  
+  </view>
+
+  <view class='page-interaction-v'>
+  
+
+  </view>
+
+  <view class='page-scrollVBase'>
+    <scroll-view class='page-scrollV' style='height:{{scrollVHeight}};' scroll-y='true' >
+      <block wx:for="{{items}}">
+        <view class='page-scrollV-cell'> 
+          <image class='page-scrollV-subV-One' style='background-color: {{item.headUrl}};' ></image>
+          <text class='page-scrollV-subV-Two'>{{item.name}}</text>
+          <text class='page-scrollV-subV-Three'>{{item.num}} 个</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+<button bindtap='scrollViewHeightChange'>HeightChange</button>
+</view>
