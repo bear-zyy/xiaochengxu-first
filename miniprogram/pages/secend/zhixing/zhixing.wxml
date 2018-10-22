@@ -14,8 +14,22 @@
   </view>
 
   <view class='page-interaction-v'>
-  
+    
+    <view class='page-interaction-v-redpacket'>
 
+      <view class='page-interaction-v-redpacket-left'> 
+        <text class='page-interaction-v-redpacket-left-title'>￥2</text>
+      </view>
+
+      <view class='page-interaction-v-redpacket-center'>
+        <text class='page-interaction-v-redpacket-center-top'> 抢票加速包 </text>
+        <text class='page-interaction-v-redpacket-center-bottom'>每天限量领取哦</text>
+      </view>
+
+      <button class='page-interaction-v-redpacket-right'>立即领取</button>
+    </view>
+    <button class='page-interaction-v-Shakedown'>我也要抢票</button>
+    <text class='page-interaction-v-message '>—已有 {{items.length}} 位朋友送Ta {{tatol}}个加速包—</text>
   </view>
 
   <view class='page-scrollVBase'>
@@ -30,5 +44,4 @@
     </scroll-view>
   </view>
 
-<button bindtap='scrollViewHeightChange'>HeightChange</button>
 </view>

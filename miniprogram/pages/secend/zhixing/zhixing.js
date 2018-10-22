@@ -5,20 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    perc : '25',
-    scrollVHeight : '100px',
-    items: [{ name: '张源远', headUrl: 'red', num: '5', best: true },
-     { name: '马伟', headUrl: 'blue', num: '5', best: true },
-      { name: '王淼森', headUrl: 'black', num: '2', best: false },
-       { name: '王旭', headUrl: 'yellow', num: '2', best: false },
-        { name: '李谦', headUrl: 'green', num: '2', best: false}]
+    perc : '50',
+    scrollVHeight : '150px',
+    items: [{ name: '张源远', headUrl: 'red', num: 5, best: true },
+     { name: '马伟', headUrl: 'blue', num: 5, best: true },
+      { name: '王淼森', headUrl: 'black', num: 2, best: false },
+       { name: '王旭', headUrl: 'yellow', num: 2, best: false },
+        { name: '李谦', headUrl: 'green', num: 2, best: false}],
+    tatol : 0    
   },
 
   scrollViewHeightChange: function () {
    
-   this.setData({
-     scrollVHeight : '150px'
-   })
   
   },
 
@@ -26,7 +24,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     
+
+
+    var tatol = 0;
+
+    for (var i = 0; i < this.data.items.length; ++i) {
+      tatol = this.data.items[i].num + tatol;
+    }
+
+    this.setData({
+      tatol: tatol
+    })
+
   },
 
   /**
