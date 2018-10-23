@@ -1,48 +1,24 @@
-// miniprogram/pages/secend/test.js
+// miniprogram/pages/secend/camera/camera.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-  
-  jumpToImageVC: function () {
-
-   wx.navigateTo({
-     url: 'image/imageV',
-   })
-  },
-  cellClick: function () {
-    wx.navigateTo({
-      url: 'cell/cell',
-    })
+     cameraPath : ''
   },
 
-  videoClick: function (){
-   wx.navigateTo({
-     url: 'video/video',
-   })
-  },
-  cameraClick : function () {
-    wx.navigateTo({
-      url: 'camera/camera',
-    })
-  },
+  takePhoto() {
+     const ctx = wx.createCameraContext()
 
-  customCell: function () {
-   
-   wx.navigateTo({
-     url: 'cell/customCell',
-   })
-  },
-  
-  zhixing: function () {
-    wx.navigateTo({
-      url: 'zhixing/zhixing',
-    })
-  
+     ctx.takePhoto({
+         quality: 'high',
+         success: (res) => {
+             this.setData({
+               cameraPath: res.tempImagePath
+             })
+         }
+     })
   },
 
   /**

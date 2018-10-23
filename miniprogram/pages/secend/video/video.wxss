@@ -1,0 +1,14 @@
+/* miniprogram/pages/secend/video/video.wxss */
+.page{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-video{
+  height: 200px;
+  width: 250px;
+
+}
+

@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-   scr : '../../../images/tab_home.png'
+   scr : '../../../images/tab_home.png',
+    imageUrl: 'http://192.168.12.111:80/static-server/pic/10000000/liveCover/a422e8fbdaa4451c805246075af1a98b.png',
+    imageUrl2: 'http://192.168.12.111:80/static-server/pic/10000000/liveCover/3b93405f2057466a988661f1cbcd3f6c.jpg'
   },
 
   // /pages/secend/image

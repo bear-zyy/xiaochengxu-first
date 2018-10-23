@@ -1,48 +1,11 @@
-// miniprogram/pages/secend/test.js
+// miniprogram/pages/secend/video/video.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-  
-  jumpToImageVC: function () {
-
-   wx.navigateTo({
-     url: 'image/imageV',
-   })
-  },
-  cellClick: function () {
-    wx.navigateTo({
-      url: 'cell/cell',
-    })
-  },
-
-  videoClick: function (){
-   wx.navigateTo({
-     url: 'video/video',
-   })
-  },
-  cameraClick : function () {
-    wx.navigateTo({
-      url: 'camera/camera',
-    })
-  },
-
-  customCell: function () {
-   
-   wx.navigateTo({
-     url: 'cell/customCell',
-   })
-  },
-  
-  zhixing: function () {
-    wx.navigateTo({
-      url: 'zhixing/zhixing',
-    })
-  
+    videoUrl: 'http://192.168.16.217:81/10000000/video/2018/20181023/20181023095000lbjs02/vga.mp4'
   },
 
   /**
