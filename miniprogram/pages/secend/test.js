@@ -37,6 +37,12 @@ Page({
      url: 'cell/customCell',
    })
   },
+
+  storage () {
+    wx.navigateTo({
+      url: 'storage/storage',
+    })
+  },
   
   zhixing: function () {
     wx.navigateTo({

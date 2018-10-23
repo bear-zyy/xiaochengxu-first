@@ -6,4 +6,5 @@
   <button bindtap='cellClick'>cell</button>
   <button bindtap='customCell'>customCell</button>
   <button bindtap='zhixing'>智行火车票</button>
+  <button bindtap='storage'>Storage</button>
 </view>
