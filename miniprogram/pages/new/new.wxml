@@ -1,1 +1,4 @@
 
+<view>
+   <button bindtap='newTwo'>newTwo</button>
+</view>

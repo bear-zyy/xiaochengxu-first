@@ -1,0 +1,4 @@
+<!--miniprogram/pages/new/newTwo.wxml-->
+<view>
+  <view class='page-view'></view>
+</view>
