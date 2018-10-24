@@ -7,4 +7,5 @@
   <button bindtap='customCell'>customCell</button>
   <button bindtap='zhixing'>智行火车票</button>
   <button bindtap='storage'>Storage</button>
+  <button bindtap='shoppingcart'>shoppingcart</button>
 </view>
