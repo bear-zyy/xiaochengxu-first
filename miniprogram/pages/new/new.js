@@ -1,4 +1,4 @@
-// miniprogram/pages/secend/test.js
+// miniprogram/pages/new/new.js
 Page({
 
   /**
@@ -7,62 +7,14 @@ Page({
   data: {
 
   },
-  
-  jumpToImageVC: function () {
-
-   wx.navigateTo({
-     url: 'image/imageV',
-   })
-  },
-  cellClick: function () {
-    wx.navigateTo({
-      url: 'cell/cell',
-    })
-  },
-
-  videoClick: function (){
-   wx.navigateTo({
-     url: 'video/video',
-   })
-  },
-  cameraClick : function () {
-    wx.navigateTo({
-      url: 'camera/camera',
-    })
-  },
-
-  customCell: function () {
-   
-   wx.navigateTo({
-     url: 'cell/customCell',
-   })
-  },
-
-  storage () {
-    wx.navigateTo({
-      url: 'storage/storage',
-    })
-  },
-  
-  zhixing: function () {
-    wx.navigateTo({
-      url: 'zhixing/zhixing',
-    })
-  
-  },
-  shoppingcart: function () {
-     wx.navigateTo({
-       url: 'shoppingcart/shoppingcart',
-     })
-  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '第二页',
-    })
+   wx.setNavigationBarTitle({
+     title: '第三页',
+   })
   },
 
   /**

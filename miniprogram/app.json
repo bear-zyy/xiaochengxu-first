@@ -17,7 +17,8 @@
     "pages/secend/video/video",
     "pages/secend/camera/camera",
     "pages/secend/storage/storage",
-    "pages/secend/shoppingcart/shoppingcart"
+    "pages/secend/shoppingcart/shoppingcart",
+    "pages/new/new"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -38,7 +39,13 @@
         "selectedIconPath": "images/tab_live.png",
         "iconPath": "images/live.png",
         "pagePath": "pages/secend/test",
-        "text": "其他"
+        "text": "第二页"
+      },
+      {
+        "selectedIconPath": "images/tab_my.png",
+        "iconPath": "images/my.png",
+        "pagePath": "pages/new/new",
+        "text": "第三页"
       }
     ]
   }
