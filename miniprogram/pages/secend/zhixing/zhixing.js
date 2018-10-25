@@ -28,6 +28,10 @@ Page({
     ]
   },
 
+  onPullDownRefresh() {
+   console.log('aaa')
+  },
+
   scrollViewHeightChange: function () {
    
   

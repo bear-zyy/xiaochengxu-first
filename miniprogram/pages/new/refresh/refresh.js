@@ -1,29 +1,28 @@
-// miniprogram/pages/new/new.js
+// miniprogram/pages/new/refresh/refresh.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+   array: ['A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G']
   },
 
-  newTwo () {
-    wx.navigateTo({
-      url: 'newTwo',
-    })
-  },
-
-  refresh () {
-    wx.navigateTo({
-      url: 'refresh/refresh',
+  onPullDownRefresh: function () {
+    
+    wx.startPullDownRefresh({
+      success(){
+        console.log('看看是啥')
+      }
     })
 
   },
 
-  coverView () {
-    wx.navigateTo({
-      url: 'cover/cover',
+  refresh: function () {
+    wx.startPullDownRefresh({
+      success() {
+        console.log('看看是啥')
+      }
     })
   },
 
@@ -31,9 +30,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-   wx.setNavigationBarTitle({
-     title: '第三页',
-   })
+
   },
 
   /**
@@ -61,13 +58,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
 
   },
 

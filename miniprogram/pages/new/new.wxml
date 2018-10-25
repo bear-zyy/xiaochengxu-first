@@ -2,4 +2,5 @@
 <view>
    <button bindtap='newTwo'>各种提示</button>
    <button bindtap='coverView'>coverView</button>
+   <button bindtap='refresh'>refresh</button>
 </view>

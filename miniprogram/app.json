@@ -20,14 +20,16 @@
     "pages/secend/shoppingcart/shoppingcart",
     "pages/new/new",
     "pages/new/newTwo",
-    "pages/new/cover/cover"
+    "pages/new/cover/cover",
+    "pages/new/refresh/refresh"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "张源远的第一个小程序",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "list": [

@@ -1,0 +1,10 @@
+.page-view {
+  width: 100%;
+  height: 100%;
+}
+
+.page-v {
+  height: 100px;
+  width: 100%;
+  border: 2px solid #999999;
+}

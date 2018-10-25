@@ -1,0 +1,8 @@
+<view class='page-view'>
+  <!-- <block wx:for="{{array}}">
+     <view class='page-v'>{{item}}</view>
+  </block> -->
+  
+  <button bindtap='refresh'> refresh</button>
+
+</view>
