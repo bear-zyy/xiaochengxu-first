@@ -14,6 +14,12 @@ Page({
     })
   },
 
+  coverView () {
+    wx.navigateTo({
+      url: 'cover/cover',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

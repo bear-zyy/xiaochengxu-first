@@ -1,4 +1,8 @@
 <!--miniprogram/pages/new/newTwo.wxml-->
 <view>
   <view class='page-view'></view>
+
+  <button bindtap='showActionSheet'>showActionSheet</button>
+
+  <button bindtap='showModal'>showModal</button>
 </view>

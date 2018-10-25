@@ -1,58 +1,22 @@
-// miniprogram/pages/new/newTwo.js
+// miniprogram/pages/new/cover/cover.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    videoUrl: 'http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400',
+    coverAlpha : 0.5
   },
-  showActionSheet () {
-   wx.showActionSheet({
-     itemList: ['A' , 'B'],
-
-     success (res) {
-       console.log(res.tapIndex)
-     }
-
-   })
+  cancel () {
+    this.video.pause()
   },
-
-  showModal () {
- 
-  //  wx.showModal({
-  //    title: '提示',
-  //    content: '这个就是iOS开发中的alertVC',
-  //    success(result) {
-  //      if (result.confirm) {
-  //        console.log('点击确定')
-  //      }
-  //      else if (result.cancel){
-  //        console.log('点击取消')
-  //      }
-  //    }
-  //  })
-
-    // wx.showToast({
-    //   title: 'e',
-    //   icon: 'loading',
-    //   duration: 5000,
-    // })
-
-    wx.showLoading({
-      title: 'hahah',
-      // mask: true,   这个是否显示蒙版，防止点击
-    })
-
-  },
-
- 
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.video = wx.createVideoContext('myVideo')
   },
 
   /**

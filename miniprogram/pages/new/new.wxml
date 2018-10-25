@@ -1,4 +1,5 @@
 
 <view>
    <button bindtap='newTwo'>newTwo</button>
+   <button bindtap='coverView'>coverView</button>
 </view>

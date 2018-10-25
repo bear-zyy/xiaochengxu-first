@@ -1,0 +1,24 @@
+/* miniprogram/pages/new/cover/cover.wxss */
+
+.page-video {
+  height: 240px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-video-cover {
+  width: 200px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-video-cover-two {
+  width: 200px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
