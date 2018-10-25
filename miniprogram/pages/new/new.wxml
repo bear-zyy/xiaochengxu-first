@@ -1,5 +1,5 @@
 
 <view>
-   <button bindtap='newTwo'>newTwo</button>
+   <button bindtap='newTwo'>各种提示</button>
    <button bindtap='coverView'>coverView</button>
 </view>
