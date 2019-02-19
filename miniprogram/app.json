@@ -14,15 +14,27 @@
     "pages/secend/cell/cell",
     "pages/secend/cell/customCell",
     "pages/secend/zhixing/zhixing",
+<<<<<<< HEAD
     "pages/index/network/next2Directory/next2DirectoryPage",
     "pages/secend/templatePage"
+=======
+    "pages/secend/video/video",
+    "pages/secend/camera/camera",
+    "pages/secend/storage/storage",
+    "pages/secend/shoppingcart/shoppingcart",
+    "pages/new/new",
+    "pages/new/newTwo",
+    "pages/new/cover/cover",
+    "pages/new/refresh/refresh"
+>>>>>>> 0e3dffc7883b7fc09b95da1d1476961787ebe73e
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "张源远的第一个小程序",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "list": [
@@ -36,7 +48,13 @@
         "selectedIconPath": "images/tab_live.png",
         "iconPath": "images/live.png",
         "pagePath": "pages/secend/test",
-        "text": "其他"
+        "text": "第二页"
+      },
+      {
+        "selectedIconPath": "images/tab_my.png",
+        "iconPath": "images/my.png",
+        "pagePath": "pages/new/new",
+        "text": "第三页"
       }
     ]
   }

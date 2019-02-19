@@ -1,16 +1,14 @@
-// miniprogram/pages/secend/image/imageV.js
+// miniprogram/pages/secend/video/video.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-   scr : '../../../images/tab_home.png',
-    imageUrl: 'http://192.168.12.111:80/static-server/pic/10000000/liveCover/a422e8fbdaa4451c805246075af1a98b.png',
-    imageUrl2: 'http://192.168.12.111:80/static-server/pic/10000000/liveCover/3b93405f2057466a988661f1cbcd3f6c.jpg'
-  },
+    videoUrl: 'http://192.168.16.217:81/10000000/video/2018/20181023/20181023095000lbjs02/vga.mp4'
 
-  // /pages/secend/image
+    // http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400
+  },
 
   /**
    * 生命周期函数--监听页面加载

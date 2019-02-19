@@ -27,11 +27,28 @@ Page({
     })
   },
 
+  videoClick: function (){
+   wx.navigateTo({
+     url: 'video/video',
+   })
+  },
+  cameraClick : function () {
+    wx.navigateTo({
+      url: 'camera/camera',
+    })
+  },
+
   customCell: function () {
    
    wx.navigateTo({
      url: 'cell/customCell',
    })
+  },
+
+  storage () {
+    wx.navigateTo({
+      url: 'storage/storage',
+    })
   },
   
   zhixing: function () {
@@ -40,6 +57,7 @@ Page({
     })
   
   },
+<<<<<<< HEAD
 // 获取授权设置，查看授权状态
   settingClick: function () {
     wx.getSetting({
@@ -74,13 +92,21 @@ wx.getUserInfo({
 wx.navigateTo({
   url: 'templatePage',
 })
+=======
+  shoppingcart: function () {
+     wx.navigateTo({
+       url: 'shoppingcart/shoppingcart',
+     })
+>>>>>>> 0e3dffc7883b7fc09b95da1d1476961787ebe73e
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.setNavigationBarTitle({
+      title: '第二页',
+    })
   },
 
   /**

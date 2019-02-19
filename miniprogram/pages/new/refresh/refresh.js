@@ -1,16 +1,30 @@
-// miniprogram/pages/secend/image/imageV.js
+// miniprogram/pages/new/refresh/refresh.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-   scr : '../../../images/tab_home.png',
-    imageUrl: 'http://192.168.12.111:80/static-server/pic/10000000/liveCover/a422e8fbdaa4451c805246075af1a98b.png',
-    imageUrl2: 'http://192.168.12.111:80/static-server/pic/10000000/liveCover/3b93405f2057466a988661f1cbcd3f6c.jpg'
+   array: ['A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G']
   },
 
-  // /pages/secend/image
+  onPullDownRefresh: function () {
+    
+    wx.startPullDownRefresh({
+      success(){
+        console.log('看看是啥')
+      }
+    })
+
+  },
+
+  refresh: function () {
+    wx.startPullDownRefresh({
+      success() {
+        console.log('看看是啥')
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -44,13 +58,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
 
   },
 

@@ -1,0 +1,13 @@
+<!--miniprogram/pages/new/newTwo.wxml-->
+<view>
+
+  <button bindtap='showActionSheet'>showActionSheet</button>
+
+  <button bindtap='showModal'>showModal</button>
+
+  <button bindtap='hideLoading'>hideLoading</button>
+
+  <button bindtap='showLoading'>showLoading</button>
+
+  <button bindtap='showToast'>showToast</button>
+</view>

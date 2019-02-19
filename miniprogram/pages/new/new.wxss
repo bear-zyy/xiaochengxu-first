@@ -1,0 +1,24 @@
+.page {
+  
+}
+
+.page-view {
+  height: 100rpx;
+  width: 100rpx;
+  margin-left: 100px;
+  background-color: red;
+}
+
+.page-view::before{
+  content: '一共';
+  font-size: 30rpx;
+  position: relative;
+}
+
+/* 都是相对左边来的 */
+.page-view::after{
+content: '元';
+font-size: 30rpx;
+position: relative;
+top: 10px;
+}

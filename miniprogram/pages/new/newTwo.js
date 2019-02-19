@@ -1,16 +1,56 @@
-// miniprogram/pages/secend/image/imageV.js
+// miniprogram/pages/new/newTwo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-   scr : '../../../images/tab_home.png',
-    imageUrl: 'http://192.168.12.111:80/static-server/pic/10000000/liveCover/a422e8fbdaa4451c805246075af1a98b.png',
-    imageUrl2: 'http://192.168.12.111:80/static-server/pic/10000000/liveCover/3b93405f2057466a988661f1cbcd3f6c.jpg'
+
+  },
+  showActionSheet () {
+   wx.showActionSheet({
+     itemList: ['A' , 'B'],
+
+     success (res) {
+       console.log(res.tapIndex)
+     }
+
+   })
   },
 
-  // /pages/secend/image
+  showModal () {
+ 
+   wx.showModal({
+     title: '提示',
+     content: '这个就是iOS开发中的alertVC',
+     success(result) {
+       if (result.confirm) {
+         console.log('点击确定')
+       }
+       else if (result.cancel){
+         console.log('点击取消')
+       }
+     }
+   })
+
+  },
+
+  hideLoading () {
+     wx.hideLoading()
+  },
+  showLoading () {
+    wx.showLoading({
+      title: 'hahah',
+      // mask: true,   这个是否显示蒙版，防止点击
+    })
+  },
+  showToast () {
+      wx.showToast({
+      title: '这是一个提示',
+      icon: 'success',
+      duration: 3000,
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

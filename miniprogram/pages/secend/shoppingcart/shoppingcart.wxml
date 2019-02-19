@@ -1,0 +1,16 @@
+<view class='page'>
+  <checkbox-group bindchange="checkboxChange">
+    <view class='page-view' wx:for="{{array}}" wx:key="{{item.id}}">
+       <checkbox value='{{item.id}}' checked='{{item.checked}}'></checkbox>
+       <image class='page-view-image' model='scaleToFill' src='{{imageUrl}}'></image>
+       <label>{{item.name}}</label>
+    </view>
+  </checkbox-group>
+
+  <view class='page-view-bottom'>
+    <button bindtap='allSelected'>全选</button>
+    <button bindtap='cancelSelected'>取消</button>
+    <button bindtap='buySelected'>购买</button>
+    <button bindtap='deleteSeleted'>删除</button>
+  </view>
+</view>

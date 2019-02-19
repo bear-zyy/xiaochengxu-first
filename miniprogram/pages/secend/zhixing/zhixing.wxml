@@ -1,6 +1,9 @@
 
 <view class="page">
-  <image class='page-image'></image>
+
+  <view class='page-image'>
+    <text class='page-image-text'> 智行抢票超靠谱 </text>
+  </view>
 
   <view class='page-speed'>
     <view class='page-speed-title'>
@@ -34,14 +37,23 @@
 
   <view class='page-scrollVBase'>
     <scroll-view class='page-scrollV' style='height:{{scrollVHeight}};' scroll-y='true' >
-      <block wx:for="{{items}}">
-        <view class='page-scrollV-cell'> 
+      <!-- <block wx:for="{{items}}" wx:key="{{item.name}}"> -->
+        <view class='page-scrollV-cell' wx:for="{{items}}" wx:key="{{item.name}}"> 
           <image class='page-scrollV-subV-One' style='background-color: {{item.headUrl}};' ></image>
           <text class='page-scrollV-subV-Two'>{{item.name}}</text>
+
+          <text class= "{{item.best ? 'page-scrollV-best-show' : 'page-scrollV-best-hide'}}">最给力</text>
+
           <text class='page-scrollV-subV-Three'>{{item.num}} 个</text>
         </view>
-      </block>
+      <!-- </block> -->
     </scroll-view>
+  </view>
+  
+  <view class='page-activityRule'>
+    <block wx:for="{{activityArray}}" wx:key="{{item}}">
+       <text class='page-activityRule-text'>{{item}}</text>
+    </block>
   </view>
 
 </view>

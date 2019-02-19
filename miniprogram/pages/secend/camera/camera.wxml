@@ -1,0 +1,11 @@
+
+<view class= "page">
+  <camera class='page-camera'></camera>
+  
+  <button bindtap='takePhoto'> takePhoto </button>
+
+  <image class='page-image' src='{{cameraPath}}'></image>
+
+  <text> 预览</text>
+
+</view>

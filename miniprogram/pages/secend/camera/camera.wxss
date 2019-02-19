@@ -1,0 +1,21 @@
+.page {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-camera {
+
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.page-image {
+
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+}

@@ -1,16 +1,25 @@
-// miniprogram/pages/secend/image/imageV.js
+// miniprogram/pages/secend/camera/camera.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-   scr : '../../../images/tab_home.png',
-    imageUrl: 'http://192.168.12.111:80/static-server/pic/10000000/liveCover/a422e8fbdaa4451c805246075af1a98b.png',
-    imageUrl2: 'http://192.168.12.111:80/static-server/pic/10000000/liveCover/3b93405f2057466a988661f1cbcd3f6c.jpg'
+     cameraPath : ''
   },
 
-  // /pages/secend/image
+  takePhoto() {
+     const ctx = wx.createCameraContext()
+
+     ctx.takePhoto({
+         quality: 'high',
+         success: (res) => {
+             this.setData({
+               cameraPath: res.tempImagePath
+             })
+         }
+     })
+  },
 
   /**
    * 生命周期函数--监听页面加载

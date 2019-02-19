@@ -1,0 +1,6 @@
+<view>
+ <button bindtap='cun'>存</button>
+ <button bindtap='qu'>取</button>
+ <button bindtap='remove'>清理指定的key数据</button>
+ <button bindtap='clear'> 清理</button>
+</view>

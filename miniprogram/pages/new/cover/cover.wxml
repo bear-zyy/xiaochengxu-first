@@ -1,0 +1,7 @@
+<view>
+  <video id='myVideo' class='page-video' src='{{videoUrl}}' autoplay='true'>
+    <cover-view class='page-video-cover' style='background-color: rgba(0, 0 , 0 ,{{coverAlpha}});' bindtap='cancel'>
+      暂停
+    </cover-view>
+  </video>
+</view>
