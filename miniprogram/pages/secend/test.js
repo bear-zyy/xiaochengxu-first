@@ -1,4 +1,7 @@
 // miniprogram/pages/secend/test.js
+
+const common = require('common.js')
+
 Page({
 
   /**
@@ -10,9 +13,13 @@ Page({
   
   jumpToImageVC: function () {
 
-   wx.navigateTo({
-     url: 'image/imageV',
-   })
+  //  wx.navigateTo({
+  //    url: 'image/imageV',
+  //  })
+
+    common.sayHello('zyy')
+    common.sayGoodbye('zyy')
+
   },
   cellClick: function () {
     wx.navigateTo({
@@ -32,6 +39,41 @@ Page({
       url: 'zhixing/zhixing',
     })
   
+  },
+// 获取授权设置，查看授权状态
+  settingClick: function () {
+    wx.getSetting({
+
+      success(res) {
+        console.log(res.authSetting)
+      }
+    }
+    )
+  },
+
+//打开权限设置页面，这个有点像iOS系统的感觉，没有首次发起权限请求，是不会在权限设置页面显示的
+  openSettingPage: function () {
+wx.openSetting({
+  success(res){
+    console.log(res.authSetting)
+  }
+})
+  },
+
+//获取用户信息
+  getUserInfoData: function () {
+wx.getUserInfo({
+  success(res){
+    console.log(res.userInfo)
+
+  }
+})
+  },
+
+  templateClick: function () {
+wx.navigateTo({
+  url: 'templatePage',
+})
   },
 
   /**

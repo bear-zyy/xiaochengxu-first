@@ -62,7 +62,7 @@ Page({
 
   networkClick: function () {
      wx.navigateTo({
-       url: 'network/networkV',
+       url: 'network/next2Directory/next2DirectoryPage',
      })
   },
 
@@ -77,7 +77,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    console.log(options)
   },
 
   /**

@@ -1,7 +1,15 @@
 
+<import scr="templatePage.wxml"/>
+
 <view>
   <button bindtap='jumpToImageVC'>imageVC</button>
   <button bindtap='cellClick'>cell</button>
   <button bindtap='customCell'>customCell</button>
   <button bindtap='zhixing'>智行火车票</button>
+  <button bindtap='settingClick'>设置权限</button>
+  <button bindtap='openSettingPage'> 打开授权设置页面 </button>
+  <button bindtap='getUserInfoData'> 获取用户信息 </button>
+  <button open-type="getUserInfo">发起权限请求，获取个人用户信息</button>
+  <button bindtap='templateClick'>模板</button>
+  <template is="zyytemplate"></template>
 </view>

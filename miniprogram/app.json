@@ -13,7 +13,9 @@
     "pages/secend/image/imageV",
     "pages/secend/cell/cell",
     "pages/secend/cell/customCell",
-    "pages/secend/zhixing/zhixing"
+    "pages/secend/zhixing/zhixing",
+    "pages/index/network/next2Directory/next2DirectoryPage",
+    "pages/secend/templatePage"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

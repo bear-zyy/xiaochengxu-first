@@ -1,0 +1,41 @@
+
+<wxs src="./tools.wxs" module="tools"/>
+
+<template name="zyytemplate">
+<text> hello world!</text>
+</template>
+
+<view>
+
+<template is="zyytemplate"></template>
+
+<button bindtap='wxforClick'>wxforClick</button>
+
+<view style='background-color: yellow;' wx:for="{{itmeData}}" wx:for-item="itemi" wx:for-index="indexi">
+   <view wx:for="{{itmeData}}" wx:for-item="itemj" wx:for-index="indexj">
+     {{itemi}} * {{itemj}} = {{itemi*itemj}}  这里是index   {{indexi}} + {{indexj}}={{indexi+indexj}}
+   </view>
+</view>
+
+<block wx:for="{{[2,1]}}">
+<view>{{index}}</view>
+<view>{{item}}</view>
+</block>
+
+<switch wx:for="{{tempData}}" wx:key="uniq">
+{{item.id}}
+</switch>
+
+<block wx:if="{{true}}">
+<view>view1</view>
+</block>
+
+<view wx:if="{{length > 5}}">1</view>
+<view wx:elif="{{length > 2}}">2</view>
+<view wx:else>3</view>
+
+
+<view>{{tools.msg}}</view>
+<view>{{tools.bar(tools.FOO)}}</view>
+
+</view>

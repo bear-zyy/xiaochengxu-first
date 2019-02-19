@@ -1,25 +1,32 @@
-// miniprogram/pages/index/first.js
-
+// miniprogram/pages/secend/templatePage.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    iconType: ['success', 'success_no_circle']
+
+itmeData: [3,2],
+tempData: [
+  { id: 5, uniq: 'unique_5' },
+  { id: 3, uniq: 'unique_3' }, 
+  { id: 1, un: 'unique_1'}
+],
+    length: 1
+
   },
 
-  backClick: function () {
-    wx.navigateBack({
-      delta: 1,
-    })
+  wxforClick: function () {
+
+
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**

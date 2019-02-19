@@ -1,25 +1,18 @@
-// miniprogram/pages/index/first.js
-
+// miniprogram/pages/index/network/next2Directory/next2DirectoryPage.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    iconType: ['success', 'success_no_circle']
-  },
 
-  backClick: function () {
-    wx.navigateBack({
-      delta: 1,
-    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
