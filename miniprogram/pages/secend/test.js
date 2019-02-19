@@ -57,7 +57,6 @@ Page({
     })
   
   },
-<<<<<<< HEAD
 // 获取授权设置，查看授权状态
   settingClick: function () {
     wx.getSetting({
@@ -92,12 +91,11 @@ wx.getUserInfo({
 wx.navigateTo({
   url: 'templatePage',
 })
-=======
+},
   shoppingcart: function () {
      wx.navigateTo({
        url: 'shoppingcart/shoppingcart',
      })
->>>>>>> 0e3dffc7883b7fc09b95da1d1476961787ebe73e
   },
 
   /**
