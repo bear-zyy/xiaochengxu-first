@@ -3,4 +3,5 @@
    <button bindtap='newTwo'>各种提示</button>
    <button bindtap='coverView'>coverView</button>
    <button bindtap='refresh'>refresh</button>
+   <button bindtap='componentClick'>自定义组件</button>
 </view>

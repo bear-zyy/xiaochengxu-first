@@ -1,4 +1,4 @@
-// miniprogram/pages/new/new.js
+// miniprogram/pages/component /newComponentPage.js
 Page({
 
   /**
@@ -6,41 +6,24 @@ Page({
    */
   data: {
 
-  },
-
-  newTwo () {
-    wx.navigateTo({
-      url: 'newTwo',
-    })
-  },
-
-  refresh () {
-    wx.navigateTo({
-      url: 'refresh/refresh',
-    })
+    componentData: '这个是组件属性值'
 
   },
 
-  coverView () {
-    wx.navigateTo({
-      url: 'cover/cover',
+  changeComponentData: function () {
+    this.setData({
+      componentData: '组件属性值改变了'
     })
+  },
+
+  valueTransmit(){
+    console.log('这里是组件传递事件过来了')
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-   wx.setNavigationBarTitle({
-     title: '第三页',
-   })
-  },
-// 这里的路径是以当前的路径为基准， 往上一个目录路径就多一个点.  ，
-  componentClick: function () {
-
-    wx.navigateTo({
-      url: '../component/newComponentPage',
-    })
 
   },
 

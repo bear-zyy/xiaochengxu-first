@@ -1,0 +1,9 @@
+<!--miniprogram/pages/component /newComponentPage.wxml-->
+<view>
+<component-tag-first textString="{{componentData}}" bind:eventName="valueTransmit">
+<view slot="first">第一个节点</view>
+<view slot="second">第二个节点</view>
+
+</component-tag-first>
+<button bindtap="changeComponentData">改变组件属性值</button>
+</view>
