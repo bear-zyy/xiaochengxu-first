@@ -4,4 +4,6 @@
    <button bindtap='coverView'>coverView</button>
    <button bindtap='refresh'>refresh</button>
    <button bindtap='componentClick'>自定义组件</button>
+   <button bindtap="networkRequest">网络搜索请求</button>
+   <button bindtap='networkStop'>网络搜索结束</button>
 </view>

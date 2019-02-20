@@ -1,5 +1,6 @@
 {
   "usingComponents":{
-    "component-tag-first": "newComponent"
+    "component-tag-first": "newComponent",
+    "component-tag-second": "newsecondComponent"
   }
 }

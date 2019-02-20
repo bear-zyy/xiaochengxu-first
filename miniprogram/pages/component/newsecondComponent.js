@@ -1,13 +1,9 @@
-// pages/component /newComponent.js
-
-const newBehavior = require('new-behavior')
-
+// pages/component/new-secondComponent.js
 Component({
 
   relations: {
-    'newsecondComponent': {
-      type: 'child',
-
+    'newComponent': {
+      type: 'parent',
       linked(target) {
         // 每次有custom-li被插入时执行，target是该节点实例对象，触发在该节点attached生命周期之后
       },
@@ -18,29 +14,13 @@ Component({
         // 每次有custom-li被移除时执行，target是该节点实例对象，触发在该节点detached生命周期之后
       }
     }
-  },
-  // 多个节点
-  options: {
-    multipleSlots: true
 
   },
-
-  behaviors: [newBehavior],
 
   /**
    * 组件的属性列表
    */
   properties: {
-
-    textString: {
-      type: String,
-      value: '默认值'
-    },
-
-    textNum: {
-      type: Number,
-      value: 5
-    }
 
   },
 
@@ -49,9 +29,6 @@ Component({
    */
   data: {
 
-    dataStr : 'aaa',
-    dataNum: 3
-
   },
 
   /**
@@ -59,19 +36,5 @@ Component({
    */
   methods: {
 
-    changeData: function (){
-      this.setData({
-        dataStr: 'bbbb'
-
-      })
-    },
-
-    valueTransmit() {
-
-      this.triggerEvent('eventName')
-
-    }
-
   }
-
 })

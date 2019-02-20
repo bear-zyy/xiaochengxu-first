@@ -5,5 +5,8 @@
 <view slot="second">第二个节点</view>
 
 </component-tag-first>
+
+
 <button bindtap="changeComponentData">改变组件属性值</button>
+
 </view>

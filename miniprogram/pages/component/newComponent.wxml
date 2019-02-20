@@ -2,9 +2,13 @@
 <view>
 <text> 这里是属性值 {{textString}}</text>
 <text> 这里是私有data值 {{dataStr}}</text>
+<text>这个是behavior数据{{myBehavoirProperty}}</text>
 
 <button bindtap='changeData'>改变私有数据</button>
 <slot name="first"></slot>
 <button bindtap='valueTransmit'>从组件传递到page</button>
 <slot name="second"></slot>
 </view>
+<!-- 行吧  这里暂时没有弄好  但是可以百度吧  要弄就弄好
+留着吧， 看看那个时候找到
+ -->
