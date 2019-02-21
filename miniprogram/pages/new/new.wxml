@@ -6,4 +6,7 @@
    <button bindtap='componentClick'>自定义组件</button>
    <button bindtap="networkRequest">网络搜索请求</button>
    <button bindtap='networkStop'>网络搜索结束</button>
+   <button bindtap='showTabbarRedDot'>showTabbarRedDot</button>
+   <button bindtap='hideTabbarRedDot'>hideTabbarRedDot</button>
+   <button bindtap='switchTab'>switchTab</button>
 </view>

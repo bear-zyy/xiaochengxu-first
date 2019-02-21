@@ -11,6 +11,26 @@ Page({
 
   },
 
+  showTabbarRedDot(){
+    wx.showTabBarRedDot({
+      index: 0
+    })
+
+  },
+  hideTabbarRedDot(){
+    wx.hideTabBarRedDot({
+      index: 0
+    })
+
+  },
+  switchTab(){
+
+    wx.switchTab({
+      url: '../secend/test',
+    })
+
+  },
+
   newTwo () {
     wx.navigateTo({
       url: 'newTwo',

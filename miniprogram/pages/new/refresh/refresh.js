@@ -8,16 +8,6 @@ Page({
    array: ['A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G']
   },
 
-  // onPullDownRefresh: function () {
-    
-  //   wx.startPullDownRefresh({
-  //     success(){
-  //       console.log('看看是啥')
-  //     }
-  //   })
-
-  // },
-
   refresh: function () {
     wx.startPullDownRefresh({
       success() {
@@ -25,6 +15,7 @@ Page({
       }
     })
   },
+
   endRefresh(){
 
     wx.stopPullDownRefresh(
@@ -39,6 +30,18 @@ Page({
 
       }
     )
+
+  },
+
+  switchTab(){
+
+    wx.switchTab({
+      url: '../../secend/test',
+    })
+
+    // wx.navigateTo({
+    //   url: '../../secend/templatePage',
+    // })
 
   },
 
