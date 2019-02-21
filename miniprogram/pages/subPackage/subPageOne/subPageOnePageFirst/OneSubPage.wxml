@@ -5,6 +5,11 @@
 <button bindtap='addLine'>add line</button>
 <button bindtap='moveLine'>move line</button>
 
-<rich-text nodes="{{nodeData}}" bindtap='tap'></rich-text>
+<!-- <rich-text nodes="{{nodeData}}" bindtap='tap'></rich-text> -->
 
+<button bindtap='timer'>计时器</button>
+<button bindtap='endTimer'>结束计时器</button>
+
+<button bindtap='delayOpreation'>延后操作</button>
+<button bindtap='clearTimeout'>取消执行延后操作</button>
 </view>

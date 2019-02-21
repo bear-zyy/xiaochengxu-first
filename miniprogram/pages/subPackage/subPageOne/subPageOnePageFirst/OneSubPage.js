@@ -3,6 +3,10 @@
 const initData = 'this is     first line \n this is second line'
 const extraLine = []
 
+const num = 1
+
+const delayNum = 1
+
 Page({
 
   /**
@@ -14,16 +18,6 @@ Page({
 
     nodeData: [{
       name: 'zyy'
-      // attrs: {
-      //   class: 'div_class',
-      //   style: 'line-height: 60px; color: red;'
-      // },
-      // children: [
-      //   {
-      //     type: 'text',
-      //     text: 'hello world'
-      //   }
-      // ]
     }]
 
   },
@@ -52,6 +46,35 @@ Page({
   //// 数组在微信小程序中  push  pop  join 是什么意思？
   //// 就目前来看  push 应该是add  pop 应该是remove lastobject  join是什么鬼？感觉像是数组转成了String
   tap(){
+
+  },
+
+  timer(){
+    this.name = setInterval(
+      function(){
+
+        console.log('2秒到了  执行了')
+
+      }, 
+      2000)
+  },
+  endTimer(){
+
+    clearInterval(this.name)
+
+  },
+
+  delayOpreation(){
+
+    this.delayNum = setTimeout(
+      function(){
+        console.log('执行了延后操作')
+
+      } , 3000)
+
+  },
+  clearTimeout(){
+    clearTimeout(this.delayNum)
 
   },
   /**

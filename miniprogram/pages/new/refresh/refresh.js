@@ -39,10 +39,6 @@ Page({
       url: '../../secend/test',
     })
 
-    // wx.navigateTo({
-    //   url: '../../secend/templatePage',
-    // })
-
   },
 
   /**
