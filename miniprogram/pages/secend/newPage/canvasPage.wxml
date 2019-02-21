@@ -1,0 +1,14 @@
+
+<canvas 
+canvas-id='myCanvas' 
+style = "border:1px solid;" 
+bindtouchstart='start' 
+bindtouchmove='move' 
+bindtouchend='end'
+>
+
+</canvas>
+
+<view hidden='{{hidden}}'>
+coordinate: {{x}},{{y}}
+</view>

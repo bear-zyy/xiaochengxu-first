@@ -1,0 +1,6 @@
+<!--miniprogram/pages/secend/newPage/newPage.wxml-->
+<view>
+
+<button bindtap='canvas'>画布</button>
+
+</view>

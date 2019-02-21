@@ -3,4 +3,7 @@
  <button bindtap='qu'>取</button>
  <button bindtap='remove'>清理指定的key数据</button>
  <button bindtap='clear'> 清理</button>
+
+<button bindtap='fileWrite'>写到文件中</button>
+<button bindtap='fileRead'>读文件中的数据</button>
 </view>

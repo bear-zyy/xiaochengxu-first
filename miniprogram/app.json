@@ -24,7 +24,9 @@
     "pages/new/newTwo",
     "pages/new/cover/cover",
     "pages/new/refresh/refresh",
-    "pages/component/newComponentPage"
+    "pages/component/newComponentPage",
+    "pages/secend/newPage/newPage",
+    "pages/secend/newPage/canvasPage"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -55,5 +57,22 @@
         "text": "第三页"
       }
     ]
-  }
+  },
+
+  "subPackages": [
+    {
+      "root": "pages/subPackage/subPageOne/",
+      "pages": [
+        "subPageOnePageFirst/OneSubPage",
+        "subPageOnePageSecond/TwoSubPage"
+      ]
+    },
+    {
+      "root": "pages/subPackage/subPageTwo/",
+      "pages": [
+        "subPageTwoPageFirst/OneSubPage",
+        "subPageTwoPageSecond/TwoSubPage"
+      ]
+    }
+  ]
 }

@@ -2,6 +2,8 @@
 <import scr="templatePage.wxml"/>
 
 <view>
+<button bindtap='newPage'>新页面</button>
+<button bindtap='jumpSubPackage'>跳转到分包看看情况</button>
   <button bindtap='jumpToImageVC'>imageVC</button>
   <button bindtap='videoClick'>video</button>
   <button bindtap='cameraClick'>camera</button>

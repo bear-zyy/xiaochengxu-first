@@ -70,6 +70,25 @@ Page({
   },
 
 
+// 这里是文件的操作了
+  fileWrite(){
+
+    const fs = wx.getFileSystemManager()
+
+    fs.writeFileSync(`${wx.env.USER_DATA_PATH}/hello.txt`, 'hello, world', 'utf8')
+
+  },
+  fileRead() {
+
+    const fs = wx.getFileSystemManager()
+
+    const string = fs.readFileSync(`${wx.env.USER_DATA_PATH}/hello.txt`, 'utf8')
+
+    console.log(string)
+
+
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
