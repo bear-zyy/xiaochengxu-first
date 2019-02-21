@@ -1,2 +1,10 @@
 <!--miniprogram/pages/subPackage/subPageOne/subPageOnePageFirst/OneSubPage.wxml-->
-<text>这是一个分包</text>
+<text>这是一个分包 第一个分包</text>
+<view>
+<text>{{textData}}</text>
+<button bindtap='addLine'>add line</button>
+<button bindtap='moveLine'>move line</button>
+
+<rich-text nodes="{{nodeData}}" bindtap='tap'></rich-text>
+
+</view>

@@ -7,8 +7,8 @@
 }
 
 .page-video{
-  height: 200px;
-  width: 250px;
+  height: 182px;
+  width: 375px;
 
 }
 

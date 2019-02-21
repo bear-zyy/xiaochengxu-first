@@ -4,5 +4,6 @@
   </block> -->
   
   <button bindtap='refresh'> refresh</button>
+  <button bindtap='endRefresh'>endRefresh</button>
 
 </view>

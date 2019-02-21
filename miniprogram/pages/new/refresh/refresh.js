@@ -8,15 +8,15 @@ Page({
    array: ['A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G']
   },
 
-  onPullDownRefresh: function () {
+  // onPullDownRefresh: function () {
     
-    wx.startPullDownRefresh({
-      success(){
-        console.log('看看是啥')
-      }
-    })
+  //   wx.startPullDownRefresh({
+  //     success(){
+  //       console.log('看看是啥')
+  //     }
+  //   })
 
-  },
+  // },
 
   refresh: function () {
     wx.startPullDownRefresh({
@@ -24,6 +24,22 @@ Page({
         console.log('看看是啥')
       }
     })
+  },
+  endRefresh(){
+
+    wx.stopPullDownRefresh(
+      {
+        success() {
+          console.log('结束了吗')
+        },
+
+        fail(){
+          console.log('失败了')
+        }
+
+      }
+    )
+
   },
 
   /**
