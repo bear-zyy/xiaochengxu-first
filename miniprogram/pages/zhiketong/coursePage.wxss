@@ -1,1 +1,20 @@
-/* miniprogram/pages/zhiketong/coursePage.wxss */
+
+page {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.page-collection {
+
+  margin-bottom: 10pt;
+
+}
+
+.page-collection-cell {
+  width: 80pt;
+  height: 140pt;
+  background: red;
+}

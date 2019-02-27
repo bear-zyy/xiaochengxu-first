@@ -23,6 +23,9 @@ Page({
     })
   },
   styleClick(){
+    wx.navigateTo({
+      url: '../zhiketong/coursePage?groupId=ffab9fd420304469acc5a42b4b383bc1',
+    })
 
   },
 

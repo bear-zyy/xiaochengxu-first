@@ -1,0 +1,21 @@
+.collection-cell {
+  height: 140pt;
+  width: 100pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 10pt; */
+}
+
+.collection-cell-image {
+
+  width: 100pt;
+  height: 100pt;
+
+}
+
+.collection-cell-title{
+  margin-top: 5px;
+  color: #323232;
+  text-align: center;
+}

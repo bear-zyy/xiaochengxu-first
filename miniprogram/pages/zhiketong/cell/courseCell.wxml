@@ -1,0 +1,4 @@
+<view class="page-collection-cell" bindtap='cellDidSelect'>
+<image class='collection-cell-image' src='{{courseData.cover}}'></image>
+<view class='collection-cell-title'>{{courseData.cname}} ddd</view>
+</view> 

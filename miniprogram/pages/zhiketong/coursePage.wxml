@@ -1,2 +1,4 @@
-<!--miniprogram/pages/zhiketong/coursePage.wxml-->
-<text></text>
+<view class='page-collection' wx:for="{{dataList}}">
+  <courseCell class="page-collection-cell" courseData="{{item}}" bind:cellDidSelect="cellDidSelect"></courseCell>
+</view>
+

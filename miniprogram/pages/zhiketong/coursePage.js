@@ -3,6 +3,7 @@
 const groupId = '';
 const tokenData = ''
 const userId = ''
+const list = []
 
 Page({
 
@@ -13,7 +14,8 @@ Page({
 
     id: groupId,
     tokenData: '',
-    userId: ''
+    userId: '',
+    dataList : list
 
   },
 
@@ -48,7 +50,7 @@ Page({
       },
     })
 
-    console.log(options.groupId)
+    // console.log(options.groupId)
 
     wx.request({
       url: 'http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/get/group/curriculums',
@@ -74,9 +76,20 @@ Page({
       success(res){
         console.log(res.data)
 
+        the.setData({
+          dataList: res.data.data.data
+        })
       }
-
     })
+  },
+
+  cellDidSelect(e){
+
+    console.log('cell点击了')
+    console.log(e)
+
+    let model = JSON.parse(e.detail.modelData)
+    console.log(model)
 
   },
 
