@@ -6,6 +6,8 @@
         <text class='user-motto'>{{testName}}</text>
     </view>
 
+    <button bindtap='styleClick'>样式</button>
+
     <button bindtap="tapName"> Click me! </button>
     <button bindtap='testClick'> testDataChange! </button>
 

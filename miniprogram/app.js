@@ -12,9 +12,9 @@ App({
 
     this.globalData = {}
 
-  }
+  },
 
-
-
+  token: 'zyy',
+  userId: 'zyy'
 
 })

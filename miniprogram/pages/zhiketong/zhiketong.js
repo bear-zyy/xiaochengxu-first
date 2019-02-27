@@ -1,7 +1,4 @@
-// miniprogram/pages/index/network/networkV.js
-
-const app = getApp()
-
+// miniprogram/pages/zhiketong/zhiketong.js
 Page({
 
   /**
@@ -9,37 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  networkRequest: function () {
-    
-    wx.request({
-      url: 'http://192.168.12.10:8250/platform-zkt-app/WiClass/rest/appLogin',
-      data: {
-        username: 'zyy',
-        password: '123456'
-      },
-      method: 'POST',
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-
-      success(res) {
-        console.log(res.data)
-
-        console.log(res.data.accessToken)
-
-        app.token = res.data.accessToken
-        app.userId = res.data.id
-
-      },
-
-      fail(res){
-        console.log(res.data)
-      }
-      
-
-    })
   },
 
   /**

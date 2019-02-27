@@ -26,7 +26,8 @@
     "pages/new/refresh/refresh",
     "pages/component/newComponentPage",
     "pages/secend/newPage/newPage",
-    "pages/secend/newPage/canvasPage"
+    "pages/secend/newPage/canvasPage",
+    "pages/zhiketong/zhiketong"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -54,10 +55,15 @@
         "iconPath": "images/my.png",
         "pagePath": "pages/new/new",
         "text": "第三页"
+      },
+      {
+        "selectedIconPath": "images/tab_jiaoyan_on.png",
+        "iconPath": "images/tab_jiaoyan.png",
+        "pagePath": "pages/zhiketong/zhiketong",
+        "text": "智课通"
       }
     ]
   },
-
   "subPackages": [
     {
       "root": "pages/subPackage/subPageOne/",

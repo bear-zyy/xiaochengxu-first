@@ -22,6 +22,12 @@ Page({
       url: 'first',
     })
   },
+  styleClick(){
+    wx.navigateTo({
+      url: 'stylePage/stylePage',
+    })
+
+  },
 
   testClick: function () {
      this.setData({
@@ -62,7 +68,7 @@ Page({
 
   networkClick: function () {
      wx.navigateTo({
-       url: 'network/next2Directory/next2DirectoryPage',
+       url: 'network/networkV',
      })
   },
 

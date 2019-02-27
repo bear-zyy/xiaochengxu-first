@@ -66,7 +66,9 @@ Page({
 
   delayOpreation(){
 
-    this.delayNum = setTimeout(
+    var that = this;
+
+    that.delayNum = setTimeout(
       function(){
         console.log('执行了延后操作')
 
