@@ -1,10 +1,8 @@
-// miniprogram/pages/zhiketong/zhiketong.js
+// miniprogram/pages/zhiketong/coursePage.js
 
-const list = []
-
+const groupId = '';
 const tokenData = ''
 const userId = ''
-
 
 Page({
 
@@ -13,7 +11,7 @@ Page({
    */
   data: {
 
-    dataList: list,
+    id: groupId,
     tokenData: '',
     userId: ''
 
@@ -24,7 +22,13 @@ Page({
    */
   onLoad: function (options) {
 
+    console.log('带过来的参数'+ options)
+
     const the = this;
+
+    the.setData({
+      id: options.groupId
+    })
 
     wx.getStorage({
       key: 'token',
@@ -44,46 +48,34 @@ Page({
       },
     })
 
+    console.log(options.groupId)
+
     wx.request({
-      url: 'http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/query/groups',
+      url: 'http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/get/group/curriculums',
+      method: 'POST',
       header: {
         'content-type': 'application/json', // 默认值
         'accessToken': the.data.tokenData,
         'userId': the.data.userId
+
       },
-      method: "POST",
       data: {
-        page : {
-          offset: 1,
-          limit: 10
+        keywords:{
+          groupId: options.groupId,
+          type: 2
+
         },
-        keywords : {
-          type : 'my'
+        page:{
+          offset: 1 ,
+          limit: 10
         }
+
       },
-      success(res) {
+      success(res){
         console.log(res.data)
 
-        if (res.data.code == 0){
-          the.setData({
-            dataList: res.data.data.data
-          })
-        }
       }
-    })
 
-  },
-
-  // 这里是cell的点击事件
-  cellDidSelect(behavior) {
-
-    const groupId = behavior.detail.groupId
-
-    console.log('cell的点击事件')
-    console.log(groupId)
-
-    wx.navigateTo({
-      url: 'coursePage?groupId=' + groupId,
     })
 
   },

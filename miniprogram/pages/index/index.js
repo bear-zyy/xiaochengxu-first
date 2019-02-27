@@ -23,9 +23,6 @@ Page({
     })
   },
   styleClick(){
-    wx.navigateTo({
-      url: 'stylePage/stylePage',
-    })
 
   },
 

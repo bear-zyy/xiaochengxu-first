@@ -1,7 +1,5 @@
 // miniprogram/pages/index/network/networkV.js
 
-const app = getApp()
-
 Page({
 
   /**
@@ -27,10 +25,27 @@ Page({
       success(res) {
         console.log(res.data)
 
-        console.log(res.data.accessToken)
+        wx.setStorage({
+          key: 'token',
+          data: res.data.accessToken,
+          success() {/* 这个是存储成功*/
+            console.log('token登录信息存储成功')
+          },
+          fail() {
+            console.log('token登录信息存储失败')
+          }
+        })
 
-        app.token = res.data.accessToken
-        app.userId = res.data.id
+        wx.setStorage({
+          key: 'userId',
+          data: res.data.id,
+          success() {/* 这个是存储成功*/
+            console.log('id登录信息存储成功')
+          },
+          fail() {
+            console.log('token登录信息存储失败')
+          }
+        })
 
       },
 

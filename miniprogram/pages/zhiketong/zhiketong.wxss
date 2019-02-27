@@ -1,1 +1,6 @@
 /* miniprogram/pages/zhiketong/zhiketong.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+}
