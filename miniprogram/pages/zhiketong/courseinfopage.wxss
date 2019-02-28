@@ -1,1 +1,5 @@
-/* pages/zhiketong/courseinfopage.wxss */
+page {
+
+  background: white;
+  
+}

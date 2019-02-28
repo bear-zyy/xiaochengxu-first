@@ -1,10 +1,13 @@
 // pages/zhiketong/courseinfopage.js
+const model = {}
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    modelData: model
 
   },
 
@@ -12,6 +15,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log('courseinfopage')  
+    console.log(options)  
+
+    this.setData({
+      modelData: JSON.parse(options.model)
+    })
+
+    console.log(this.data.modelData)
 
   },
 

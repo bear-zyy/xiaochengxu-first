@@ -1,5 +1,11 @@
 /* pages/zhiketong/cell/CourseInfoCell.wxss */
 
+.view-base {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .cell-title {
   margin-top: 20px;
   margin-left: 15px;
@@ -17,7 +23,7 @@
 
 .cell-line {
   background: #e3e3e3;
-  margin: 20px , 0 , 0 , 0;
+  margin-top: 5px;
   height: 1px;
 
 }

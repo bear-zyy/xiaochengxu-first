@@ -92,7 +92,7 @@ Page({
     console.log(e)
 
     wx.navigateTo({
-      url: 'courseinfopage?model=' + JSON.stringify(e.detail.modelData)
+      url: 'courseinfopage?model=' + e.detail.modelData
     })
 
   },
