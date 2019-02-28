@@ -1,1 +1,23 @@
 /* pages/zhiketong/cell/CourseInfoCell.wxss */
+
+.cell-title {
+  margin-top: 20px;
+  margin-left: 15px;
+  color: gray;
+  font-size: 12;
+
+}
+
+.cell-value {
+  margin-top: 15px;
+  margin-left: 15px;
+  color: #323232;
+  font-size: 14;
+}
+
+.cell-line {
+  background: #e3e3e3;
+  margin: 20px , 0 , 0 , 0;
+  height: 1px;
+
+}

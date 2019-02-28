@@ -91,13 +91,8 @@ Page({
     console.log('cell点击了')
     console.log(e)
 
-    let model = JSON.parse(e.detail.modelData)
-    console.log(model)
-
-    let modelString = JSON.stringify(model)
-
     wx.navigateTo({
-      url: 'courseInfoPage?model=' + modelString,
+      url: 'courseinfopage?model=' + JSON.stringify(e.detail.modelData)
     })
 
   },

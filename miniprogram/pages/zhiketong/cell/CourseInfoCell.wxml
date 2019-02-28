@@ -1,2 +1,4 @@
 <!--pages/zhiketong/cell/CourseInfoCell.wxml-->
-<text>pages/zhiketong/cell/CourseInfoCell.wxml</text>
+<text class='cell-title'>{{title}}</text>
+<text class='cell-value'>{{value}}</text>
+<view class='cell-line'></view>

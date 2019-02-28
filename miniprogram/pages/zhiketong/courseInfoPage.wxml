@@ -1,1 +1,9 @@
+<view>
 
+ <CourseInfoCell title="教研名称" value="{{modelData.groupName}}"></CourseInfoCell>
+ <CourseInfoCell title="参加人员" value="{{modelData.memberList.length}}"></CourseInfoCell>
+ <CourseInfoCell title="课程名称" value="{{modelData.cname}}"></CourseInfoCell>
+ <CourseInfoCell title="评课时间" value="{{modelData.date}}+{{modelData.starttime}} + {{modelData.date}} +{{modelData.endtime}}"></CourseInfoCell>
+ <CourseInfoCell title='地点' value="{{modelData.areaName}}"></CourseInfoCell>
+
+</view>
