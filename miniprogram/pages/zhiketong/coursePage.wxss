@@ -14,7 +14,7 @@ page {
 }
 
 .page-collection-cell {
-  width: 80pt;
+  width: 120pt;
   height: 140pt;
   background: red;
 }

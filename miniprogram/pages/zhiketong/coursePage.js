@@ -51,6 +51,9 @@ Page({
     })
 
     // console.log(options.groupId)
+    // the.setData({
+    //   dataList: [{},{},{},{},{},{},{}]
+    // })
 
     wx.request({
       url: 'http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/get/group/curriculums',
@@ -90,6 +93,12 @@ Page({
 
     let model = JSON.parse(e.detail.modelData)
     console.log(model)
+
+    let modelString = JSON.stringify(model)
+
+    wx.navigateTo({
+      url: 'courseInfoPage?model=' + modelString,
+    })
 
   },
 

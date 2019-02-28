@@ -2,6 +2,6 @@
 <view class="cell" bindtap='cellDidSelect'>
 
 <image class='cell-image' src='{{cellData.memberList[0].userPictureURL}}'></image>
-<view class='cell-title'>{{cellData.name}}</view>
+<view class='cell-title'>{{cellData.name}} </view>
 
 </view>
