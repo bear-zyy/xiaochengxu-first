@@ -1,7 +1,27 @@
 
-<view class="cell" bindtap='cellDidSelect'>
+<template name="imagetemplate">
+  <view class='cell-imagelist' wx:for="{{memberList}}" wx:key="">
+    <view class='cell-imagelist-view'>
+      <image class='cell-imagelist-image' src='{{item.userPictureURL}}'></image>
+    </view>
+  </view>
+</template>
 
-<image class='cell-image' src='{{cellData.memberList[0].userPictureURL}}'></image>
-<view class='cell-title'>{{cellData.name}} </view>
+<view class="cell" bindtap='cellDidSelect'>
+  <image class='cell-image' src='{{cellData.memberList[0].userPictureURL}}'></image>
+  <view class='cell-rightview'>
+    <view class='cell-rightview-top'>
+      <text class='cell-title'>{{cellData.name}}</text>
+      <text class='cell-member-num'>{{cellData.memberList.length}}人</text>
+    </view>
+    <view class='cell-rightview-bottom'>
+      <text style='font-size: 12px;'>组长</text>
+      <image class='cell-rightview-leaderimage' src='{{cellData.memberList[0].userPictureURL}}'></image>
+      <text style='margin-left:10px; font-size: 12px;'>组员</text>
+      <template is="imagetemplate" data="{{memberList}}" />
+
+    </view>
+
+  </view>
 
 </view>

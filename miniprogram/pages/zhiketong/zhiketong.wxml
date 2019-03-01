@@ -1,3 +1,3 @@
 <view class='page' wx:for="{{dataList}}">
-<component-cell cellData="{{item}}" bind:cellDidSelect="cellDidSelect"></component-cell>
+<component-cell cellData="{{item}}" memberList="{{}}" bind:cellDidSelect="cellDidSelect"></component-cell>
 </view>

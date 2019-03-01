@@ -12,7 +12,12 @@ tempData: [
   { id: 3, uniq: 'unique_3' }, 
   { id: 1, un: 'unique_1'}
 ],
-    length: 1
+
+    temp: '111',
+
+  listData: [1, 2, 3],
+    
+  length: 1
 
   },
 

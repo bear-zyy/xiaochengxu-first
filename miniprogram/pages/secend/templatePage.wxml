@@ -2,27 +2,32 @@
 <wxs src="./tools.wxs" module="tools"/>
 
 <template name="zyytemplate">
-<text> hello world!</text>
+  <text>额 这个不好吧</text>
+  <view wx:for="{{listData}}" wx:key="">
+    <text>这是啥{{item}}</text>
+  </view>
+
 </template>
 
 <view>
 
-<template is="zyytemplate"></template>
+<!-- 这个地方的赋值也是可以的 -->
+<template is="zyytemplate" data="{{listData}}"></template>
 
 <button bindtap='wxforClick'>wxforClick</button>
 
-<view style='background-color: yellow;' wx:for="{{itmeData}}" wx:for-item="itemi" wx:for-index="indexi">
-   <view wx:for="{{itmeData}}" wx:for-item="itemj" wx:for-index="indexj">
+<view style='background-color: yellow;' wx:for="{{itmeData}}" wx:for-item="itemi" wx:for-index="indexi" wx:key="id">
+   <view wx:for="{{itmeData}}" wx:for-item="itemj" wx:for-index="indexj" wx:key="id">
      {{itemi}} * {{itemj}} = {{itemi*itemj}}  这里是index   {{indexi}} + {{indexj}}={{indexi+indexj}}
    </view>
 </view>
 
-<block wx:for="{{[2,1]}}">
+<block wx:for="{{[2,1]}}" wx:key="id">
 <view>{{index}}</view>
 <view>{{item}}</view>
 </block>
 
-<switch wx:for="{{tempData}}" wx:key="uniq">
+<switch wx:for="{{tempData}}" wx:key="id">
 {{item.id}}
 </switch>
 
@@ -37,5 +42,11 @@
 
 <view>{{tools.msg}}</view>
 <view>{{tools.bar(tools.FOO)}}</view>
+
+<block wx:for="{{listData}}" wx:key="">
+<view>{{item}}</view>
+</block>
+
+<view class='heheda'>呵呵哒</view>
 
 </view>

@@ -15,6 +15,25 @@ Component({
    */
   data: {
 
+    memberList: []
+
+  },
+
+  attached() {
+    // 在组件实例进入页面节点树时执行
+   let array = []
+
+   for(var i = 0 ; i < this.properties.cellData.memberList.length; i++){
+     let object = this.properties.cellData.memberList[i];
+     if (object.isLeader != 1){
+       array.push(object)
+     }
+   }
+
+   this.setData({
+     memberList: array
+   })
+
   },
 
   /**
@@ -36,4 +55,6 @@ Component({
     }
 
   }
+
+
 })

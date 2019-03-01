@@ -7,7 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    modelData: model
+    modelData: model,
+    memberString: ''
 
   },
 
@@ -20,6 +21,16 @@ Page({
 
     this.setData({
       modelData: JSON.parse(options.model)
+    })
+
+    let string = ''
+    for (var i=0 ; i < this.data.modelData.memberList.length ; i++){
+    
+      string = string + this.data.modelData.memberList[i].name + '、'
+    }
+
+    this.setData({
+      memberString : string
     })
 
     console.log(this.data.modelData)

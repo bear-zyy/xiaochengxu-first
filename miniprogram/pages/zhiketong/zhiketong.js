@@ -100,6 +100,8 @@ Page({
    */
   onShow: function () {
 
+    console.log('onShow')//这个是每次页面显示都执行
+
   },
 
   /**
