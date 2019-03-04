@@ -84,6 +84,20 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
+
+    wx.getStorage({
+      key: 'token',
+      success: function (res) {
+        app.token = res.data
+      },
+    })
+
+    wx.getStorage({
+      key: 'userId',
+      success: function (res) {
+        app.userId = res.data
+      },
+    })
   },
 
   /**

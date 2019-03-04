@@ -1,5 +1,7 @@
 // miniprogram/pages/zhiketong/zhiketong.js
 
+var requestClass = require('../../request.js')
+
 const list = []
 
 const tokenData = ''
@@ -26,51 +28,59 @@ Page({
 
     const the = this;
 
-    wx.getStorage({
-      key: 'token',
-      success: function (res) {
-        the.setData({
-          tokenData: res.data
-        })
-      },
-    })
-
-    wx.getStorage({
-      key: 'userId',
-      success: function (res) {
-        the.setData({
-          userId: res.data
-        })
-      },
-    })
-
-    wx.request({
-      url: 'http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/query/groups',
-      header: {
-        'content-type': 'application/json', // 默认值
-        'accessToken': the.data.tokenData,
-        'userId': the.data.userId
-      },
-      method: "POST",
-      data: {
-        page : {
+    requestClass.postRequest('http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/query/groups' 
+      , {
+        page: {
           offset: 1,
           limit: 10
         },
-        keywords : {
-          type : 'my'
-        }
-      },
-      success(res) {
-        console.log(res.data)
+        keywords: {
+          type: 'my'
+        }} 
+      , the.doSuccess
+      , the.doFail );
 
-        if (res.data.code == 0){
-          the.setData({
-            dataList: res.data.data.data
-          })
-        }
-      }
-    })
+    // wx.request({
+    //   url: 'http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/query/groups',
+    //   header: {
+    //     'content-type': 'application/json', // 默认值
+    //     'accessToken': the.data.tokenData,
+    //     'userId': the.data.userId
+    //   },
+    //   method: "POST",
+    //   data: {
+    //     page : {
+    //       offset: 1,
+    //       limit: 10
+    //     },
+    //     keywords : {
+    //       type : 'my'
+    //     }
+    //   },
+    //   success(res) {
+    //     console.log(res.data)
+
+    //     if (res.data.code == 0){
+    //       the.setData({
+    //         dataList: res.data.data.data
+    //       })
+    //     }
+    //   }
+    // })
+
+  },
+
+  doSuccess: function (data) {
+    // console.log(data)
+    if (data.code == 0) {
+      this.setData({
+        dataList: data.data.data
+      })
+    }
+
+  },
+  doFail(){
+    console.log('请求失败了')
 
   },
 
