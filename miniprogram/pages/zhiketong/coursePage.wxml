@@ -1,4 +1,30 @@
-<view class='page-collection' wx:for="{{dataList}}">
+<!-- <view class='page-collection' wx:for="{{twoDataList}}">
   <courseCell class="page-collection-cell" courseData="{{item}}" bind:cellDidSelect="cellDidSelect"></courseCell>
+</view> -->
+
+<view class='page'>
+
+  <view class='page-topview'>
+    <text class='page-topview-but'>在进行</text>
+    <text class='page-topview-but'>已结束</text>
+  </view>
+
+  <scroll-view class='page-scrollview' scroll-x>
+    <view class='page-scrollview-baseview'>
+      <view class='page-scrollview-view'>
+        <block wx:for="{{twoDataList}}" wx:key="" >
+          <courseCell class="page-collection-cell" courseData="{{item}}" bind:cellDidSelect="cellDidSelect"></courseCell>
+        </block>
+      </view>
+
+      <view class='page-scrollview-view'>
+         <block wx:for="{{oneDataList}}" wx:key="" >
+          <courseCell class="page-collection-cell" courseData="{{item}}" bind:cellDidSelect="cellDidSelect"></courseCell>
+        </block>
+      </view>
+      
+    </view>
+   </scroll-view>
+
 </view>
 

@@ -1,6 +1,6 @@
 .collection-cell {
-  height: 140pt;
-  width: 120pt;
+  height: 100pt;
+  width: 90pt;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +9,9 @@
 
 .collection-cell-image {
 
-  width: 120pt;
-  height: 100pt;
+  width: 90pt;
+  height: 70pt;
+  background: blue;
 
 }
 
@@ -18,5 +19,7 @@
   margin-top: 5px;
   color: #323232;
   text-align: center;
-  width: 120pt;
+  width: 90pt;
+  height: 25px;
+  background: grey;
 }

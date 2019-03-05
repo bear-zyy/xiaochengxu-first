@@ -1,4 +1,7 @@
 // pages/zhiketong/courseinfopage.js
+
+var requestClass = require('../../request.js')
+
 const model = {}
 
 Page({

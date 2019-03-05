@@ -1,9 +1,13 @@
 // miniprogram/pages/zhiketong/coursePage.js
 
+var requestClass = require('../../request.js')
+
 const groupId = '';
 const tokenData = ''
 const userId = ''
 const list = []
+
+const onelist = []
 
 Page({
 
@@ -15,7 +19,8 @@ Page({
     id: groupId,
     tokenData: '',
     userId: '',
-    dataList : list
+    twoDataList : list,
+    oneDataList: onelist
 
   },
 
@@ -29,61 +34,71 @@ Page({
     const the = this;
 
     the.setData({
-      id: options.groupId
+      id: options.groupId,
+
+      twoDataList: [{}],
+
+      oneDataList: [{},{},{}]
     })
 
-    wx.getStorage({
-      key: 'token',
-      success: function (res) {
-        the.setData({
-          tokenData: res.data
-        })
-      },
+
+
+// 这个是已经结束的课程
+  // requestClass.postRequest(
+  //   'http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/get/group/curriculums' 
+  //   , {
+  //   keywords: {
+  //     groupId: options.groupId,
+  //     type: 2
+
+  //   },
+  //   page: {
+  //     offset: 1,
+  //     limit: 10
+  //   }} 
+  //   , the.doSuccesstwo
+  //   , the.doFail
+  //   );
+// 这个是正在进行时的课程
+    // requestClass.postRequest(
+    //   'http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/get/group/curriculums'
+    //   , {
+    //     keywords: {
+    //       groupId: options.groupId,
+    //       type: 1
+
+    //     },
+    //     page: {
+    //       offset: 1,
+    //       limit: 10
+    //     }
+    //   }
+    //   , the.doSuccessOne
+    //   , the.doFailOne
+    // );
+
+  },
+  // 网络请求成功
+  doSuccesstwo(data){
+
+    this.setData({
+      twoDataList: data.data.data
     })
 
-    wx.getStorage({
-      key: 'userId',
-      success: function (res) {
-        the.setData({
-          userId: res.data
-        })
-      },
+  },
+  doSuccessOne(data){
+    this.setData({
+      oneDataList: data.data.data
     })
 
-    // console.log(options.groupId)
-    // the.setData({
-    //   dataList: [{},{},{},{},{},{},{}]
-    // })
+  },
+  //网络请求失败
+  doFail(){
+    console.log('失败')
 
-    wx.request({
-      url: 'http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/get/group/curriculums',
-      method: 'POST',
-      header: {
-        'content-type': 'application/json', // 默认值
-        'accessToken': the.data.tokenData,
-        'userId': the.data.userId
-
-      },
-      data: {
-        keywords:{
-          groupId: options.groupId,
-          type: 2
-
-        },
-        page:{
-          offset: 1 ,
-          limit: 10
-        }
-
-      },
-      success(res){
-        console.log(res.data)
-
-        the.setData({
-          dataList: res.data.data.data
-        })
-      }
-    })
+  },
+  doFailOne(){
+    console.log('one失败')
   },
 
   cellDidSelect(e){

@@ -40,34 +40,6 @@ Page({
       , the.doSuccess
       , the.doFail );
 
-    // wx.request({
-    //   url: 'http://192.168.12.10:8250/platform-zkt-app/app/teachResearch/query/groups',
-    //   header: {
-    //     'content-type': 'application/json', // 默认值
-    //     'accessToken': the.data.tokenData,
-    //     'userId': the.data.userId
-    //   },
-    //   method: "POST",
-    //   data: {
-    //     page : {
-    //       offset: 1,
-    //       limit: 10
-    //     },
-    //     keywords : {
-    //       type : 'my'
-    //     }
-    //   },
-    //   success(res) {
-    //     console.log(res.data)
-
-    //     if (res.data.code == 0){
-    //       the.setData({
-    //         dataList: res.data.data.data
-    //       })
-    //     }
-    //   }
-    // })
-
   },
 
   doSuccess: function (data) {
