@@ -25,3 +25,7 @@ page {
   width: 100%;
   
 }
+
+.page-list-view-cell {
+  background: white;
+}

@@ -1,2 +1,2 @@
-<!--pages/zhiketong/cell/commentcoursecell.wxml-->
-<text>pages/zhiketong/cell/commentcoursecell.wxml</text>
+
+<view class="{{}}" bindtap="cellSelect"></view>

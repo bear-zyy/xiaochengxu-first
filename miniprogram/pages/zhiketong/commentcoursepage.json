@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+
+    "commentcoursecell":"cell/commentcoursecell"
+  }
 }

@@ -6,6 +6,13 @@ Page({
    */
   data: {
 
+    listdata: []
+
+  },
+
+  cellDidSelect(e){
+    console.log(e)
+
   },
 
   /**

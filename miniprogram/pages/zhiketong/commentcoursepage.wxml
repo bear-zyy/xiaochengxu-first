@@ -17,6 +17,11 @@
     </view>
     <view style='background:#e3e9ee; height:1px; margin-bottom:0px; width:100%'></view>
   </view>
+  <view class='page-list-view'>
+    <block wx:for="{{listdata}}" wx:key="">
+      <commentcoursecell class='page-list-view-cell' celldata="{{item}}" bind:cellSelect="cellDidSelect"></commentcoursecell>
+    </block>
+  </view>
 
 
 </view>
