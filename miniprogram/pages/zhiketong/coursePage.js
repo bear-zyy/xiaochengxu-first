@@ -35,13 +35,9 @@ Page({
 
     the.setData({
       id: options.groupId,
-
-      twoDataList: [{}],
-
-      oneDataList: [{},{},{}]
+      twoDataList: [{}, {} , {}],
+      oneDataList: [{} , {} , {}]
     })
-
-
 
 // 这个是已经结束的课程
   // requestClass.postRequest(
@@ -103,13 +99,17 @@ Page({
 
   cellDidSelect(e){
 
-    console.log('cell点击了')
-    console.log(e)
+    if (e.detail.modelData.type == 1){//是啥，我也不知道了
+      wx.navigateTo({
+        url: 'courseinfopage?model=' + e.detail.modelData
+      })
+    }
+    else{
+      wx.navigateTo({
+        url: 'commentcoursepage?model=' + e.detail.modelData
+      })
 
-    wx.navigateTo({
-      url: 'courseinfopage?model=' + e.detail.modelData
-    })
-
+    }
   },
 
   /**

@@ -1,2 +1,22 @@
-<!--miniprogram/pages/zhiketong/commentcoursepage.wxml-->
-<text>miniprogram/pages/zhiketong/commentcoursepage.wxml</text>
+<view class="page">
+  <view class='page-topview'>
+    <view class='page-topview-view'>
+    <!-- margin-left:15pt padding-right:15pt -->
+      <text style='font-size: 15pt; color:#323232; '>春天的故事</text>
+      <text style='font-size: 12pt; color:#2DABFF; ' >计时00：00</text>
+    </view>
+    <view class='page-topview-view'>
+       <text style='font-size: 10pt; color:gray; '>授课人</text>
+       <text style='font-size: 10pt; color:gray; '>教研组</text>
+       <text style='font-size: 10pt; color:gray; '>参与人</text>
+    </view>
+    <view class='page-topview-view'>
+       <text style='font-size: 13pt; color:#323232; '>王华</text>
+       <text style='font-size: 13pt; color:#323232'>123评课组</text>
+       <text style='font-size: 13pt; color:#323232; '>6人</text>
+    </view>
+    <view style='background:#e3e9ee; height:1px; margin-bottom:0px; width:100%'></view>
+  </view>
+
+
+</view>
